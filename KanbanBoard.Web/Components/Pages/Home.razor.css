@@ -1,0 +1,35 @@
+﻿
+.home{
+    display:grid;
+    grid-template-rows:50px 50px 1fr;
+    grid-template-columns:repeat(5,1fr);
+    height:100%;
+}
+
+.home div{
+    border:1px solid #000;
+}
+
+.title, .menu, .kanban-menu {
+    grid-column: 1 / 6;
+}
+
+.kanban-menu {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.new {
+  grid-column: 1 / 2;
+}
+
+.approved {
+    grid-column: 2 / 3;
+}
+.committed {
+    grid-column: 3 / 4;
+}
+.done {
+    grid-column: 4 / 5;
+}

@@ -1,0 +1,27 @@
+﻿<div class="header-container">
+    <div>
+        <ul class="header-left-list">
+            <li>Logo</li>
+            <li><a href="#">SEW-AmericanWater</a></li>
+            <li><a href="#">Builder</a></li>
+            <li><a href="#">Boards</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="header-right-list">
+            <li>
+                <InputText @bind-Value="SearchText" class="search" />
+            </li>
+            <li><a href="#">Icon-1</a></li>
+            <li><a href="#">Icon-2</a></li>
+            <li><a href="#">Icon-3</a></li>
+            <li><a href="#">Icon-4</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+@code {
+    public string SearchText { get; set; } = string.Empty;
+}
