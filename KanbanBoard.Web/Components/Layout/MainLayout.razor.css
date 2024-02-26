@@ -3,8 +3,9 @@
     height:100vh;
     width:100vw;
     display:grid;
-    grid-template-rows:50px 1fr 50px;
+    grid-template-rows:50px 1fr;
     grid-template-columns:300px 1fr;
+    overflow-x:hidden;
 }
 
  
@@ -14,13 +15,15 @@
    border-bottom:1px solid #ccc;
 }
 
-.footer {
-    grid-column: 1 / span 2;
-    border-top: 1px solid #ccc;
-}
+
 
 .sidebar {
     border-right: 1px solid #ccc;
+}
+
+.main-content {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 

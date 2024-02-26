@@ -2,12 +2,78 @@
 
 <PageTitle>Home</PageTitle>
 <div class="home">
-    <div class="title">title</div>
-    <div class="menu">menu</div>
+    <div class="title">
+        <div class="title-container">
+            <i class="bi bi-building-fill"></i>
+            <span>Builder Team</span>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-people"></i>
+        </div>
+    </div>
+    <div class="menu">
+       <div class="menu-container">
+            <span class="menu-text">Board</span>
+            <span class="menu-text">Analytics</span>
+            <div>
+                <i class="bi bi-arrow-right-circle menu-text"></i>
+                <span class="menu-text">View as Backlog</span>
+            </div>
+       </div>
+    </div>
+    <div class="divider"></div>
     <div class="kanban-menu">
-       <div class="new">New</div>
-        <div class="approved">Approved</div>
-        <div class="committed">Committed</div>
-        <div class="done">Done</div>
+        <div class="new">
+            <div class="new-header menu-text ml-9">New</div>
+            <div class="new-body">
+                <div class="add-item">
+                    <FluentButton IconStart="@(new Icons.Regular.Size16.Add())">
+                        Add Item
+                    </FluentButton>
+                </div>
+                <div class="new-items">
+                    <div class="item shadow bug"></div>
+                    <div class="item shadow task"></div>
+                    <div class="item shadow backlog"></div>
+                    <div class="item shadow backlog"></div>
+                    <div class="item shadow backlog"></div>
+                </div>
+            </div>
+        </div>
+        <div class="approved">
+            <div class="approved-header menu-text ml-9">Approved</div>
+            <div class="approved-body">
+                <div class="new-items">
+                    <div class="item shadow bug"></div>
+                    <div class="item shadow task"></div>
+                    <div class="item shadow backlog"></div>
+                    <div class="item shadow backlog"></div>
+                    <div class="item shadow backlog"></div>
+                </div>
+            </div>
+        </div>
+        <div class="committed">
+            <div class="committed-header menu-text ml-9">Committed</div>
+            <div class="committed-body">
+                <div class="new-items">
+                    <div class="item shadow bug"></div>
+                    <div class="item shadow task"></div>
+                    <div class="item shadow backlog"></div>
+                    <div class="item shadow backlog"></div>
+                    <div class="item shadow backlog"></div>
+                </div>
+            </div>
+        </div>
+        <div class="done">
+            <div class="done-header menu-text ml-9">Done</div>
+            <div class="done-body">
+                <div class="new-items">
+                    <div class="item shadow bug"></div>
+                    <div class="item shadow task"></div>
+                    <div class="item shadow backlog"></div>
+                    <div class="item shadow backlog"></div>
+                    <div class="item shadow backlog"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

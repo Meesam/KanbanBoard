@@ -1,35 +1,121 @@
 ﻿
 .home{
     display:grid;
-    grid-template-rows:50px 50px 1fr;
+    grid-template-rows:50px 50px 50px 1fr;
     grid-template-columns:repeat(5,1fr);
     height:100%;
 }
-
-.home div{
-    border:1px solid #000;
-}
-
-.title, .menu, .kanban-menu {
+.divider {
     grid-column: 1 / 6;
 }
 
-.kanban-menu {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(5,1fr);
+
+
+.title, .menu, .kanban-menu  {
+    grid-column: 1 / 6;
 }
 
+
+
+    .kanban-menu {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(5,1fr);
+        gap: 10px
+    }
+
 .new {
-  grid-column: 1 / 2;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: 1fr;
+}
+
+
+.new-body, .approved-body, .committed-body, .done-body {
+    grid-row: 2 / 3;
+    background-color: #efecec;
+    border-top: 2px solid #CCC;
+    padding: 10px;
 }
 
 .approved {
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: 1fr;
 }
 .committed {
     grid-column: 3 / 4;
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: 1fr;
 }
 .done {
     grid-column: 4 / 5;
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: 1fr;
+}
+
+.title, .menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu {
+    border-bottom: 1px solid #CCC;
+}
+
+
+.title-container, .menu-container {
+    display: flex;
+    gap: 15px;
+    align-items:center;
+}
+
+.menu-text{
+    font-size:14px;
+    cursor:pointer;
+}
+
+.ml-9{
+    margin-left:9px;
+}
+
+.new-body{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:50px 1fr;
+}
+
+.add-item{
+    display:flex;
+}
+
+.new-items{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.item{
+    min-height:150px;
+    width:100%;
+    background-color:white;
+    
+}
+
+.bug {
+    border-left: 3px solid #ff0000;
+}
+
+.task {
+    border-left: 3px solid #ff6a00;
+}
+
+.backlog {
+    border-left: 3px solid #3f61b4;
 }
